@@ -1,0 +1,93 @@
+<html>
+	<head>
+		<meta charset="UFT-8"/>
+		<title>La Salamandre Informatis&eacute;e</title>
+		<link rel="shortcut icon" href="./images/salamandre.gif"/>
+		<link href="./css/test.css" rel="stylesheet"/>
+	</head>
+	<body>
+		<table class="rectangle">
+			<tr>
+				<td width="6">
+					<div class="dropdown">
+					  <input type="image" onclick="deroule()" class="dropbtn" src="./images/salamandre.gif" height=50></button>
+					  <div id="myDropdown" class="dropdown-content">
+						<table class="affichage" cellspacing=10px >
+							<tr >
+								<a class="affichage_couleur", href="./acceuil.html">Page d'acceuil</a>
+							</tr>
+							<tr>
+								<td class="a">
+									<a href="./body_and_head/Body_and_head.html">Head Body</a>
+								</td>
+								<td class="b">
+									<a href="./span_et_css/span_et_css.html">Span et CSS</a>
+								</td>
+							</tr>
+							<tr>
+								<td class="c">
+									<a href="./fonctions/fonctions.html">Fonctions</a>
+								</td>
+								<td class="d">
+									<a href="./lien_et_bouton/lien_et_bouton.html">Lien et bouton</a>
+								</td>
+							</tr>
+							<tr>
+								<td class="e">
+									<a href="./menu/menu.html">Menu</a>
+								</td>
+								<td  class="f">
+									<a href="./exercice/exercice.html">Exercices</a>
+								</td>
+							</tr>
+						</table>
+					  </div>
+					</div>
+				</td>
+				<td width=94%, class="test", align="center";>
+				<span class="gros_titre">Bienvenue sur la Salamandre Informatis&eacute;e !</span>
+				</td>
+			</tr>	
+		</table>
+		<div id="marge">
+			<div>
+				<br>
+				<h2>Ce site a été créé par François-Xavier PRETARI, Clément DUBOIS-ROUAULT et Blaise DUPUIS, 2nd6 au lycée Sainte-Croix Saint Euverte à Orléans.
+				<br><br><br>
+				Il est  entièrement dédié à la <span style="color:#ED1C24;">SNT</span>, plus particulièrement à la création d'un site Web. 
+				</br>
+				Pour changer de page et voir les différentes parties, il suffit de cliquer sur l'icone "salamandre" en haut à gauche de la page.
+				<br>
+				<br>
+				Ce site est divisé en plusieurs parties :
+				<ul>
+					<li>L'utilisation de Head and Body</li>
+					<li>Les fonctions</li>
+					<li>Les liens et boutons</li>
+					<li>Les menus</li>
+					<li>Les balises &lt;span&gt; et le css</li>
+					<li>Des exercices afin de s'entraîner</li>
+				</ul>
+				</br>
+				
+			</div>
+		</div>
+		<script>
+		function deroule() {
+		document.getElementById("myDropdown").classList.toggle("show");
+		}
+		window.onclick = function(event) {
+		  if (!event.target.matches('.dropbtn')) {
+			var dropdowns = document.getElementsByClassName("dropdown-content");
+			var i;
+			for (i = 0; i < dropdowns.length; i++) {
+			  var openDropdown = dropdowns[i];
+			  if (openDropdown.classList.contains('show')) {
+				openDropdown.classList.remove('show');
+			  }
+			}
+		  }
+		}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,125 @@
+<html>
+	<head>
+		<meta charset="UFT-8"/>
+		<title>La Salamandre Informatis&eacute;e</title>
+		<link rel="shortcut icon" href="../images/salamandre.gif"/>
+		<link href="../css/test.css" rel="stylesheet"/>
+	</head>
+	<body>
+	<div id="tet">
+		<table class="rectangle">
+			<tr>
+				<td width=6%>
+					<div class="dropdown">
+					  <input type="image" onclick="deroule()" class="dropbtn" src="../images/salamandre.gif" height=50></button>
+					  <div id="myDropdown" class="dropdown-content">
+						<table class="affichage" cellspacing=10px >
+							<tr >
+								<a class="affichage_couleur", href="../acceuil.html">Page d'acceuil</a>
+							</tr>
+							<tr>
+								<td class="a">
+									<a href="../body_and_head/Body_and_head.html">Head Body</a>
+								</td>
+								<td class="b">
+									<a href="../span_et_css/span_et_css.html">Span et CSS</a>
+								</td>
+							</tr>
+							<tr>
+								<td class="c">
+									<a href="../fonctions/fonctions.html">Fonctions</a>
+								</td>
+								<td class="d">
+									<a href="../lien_et_bouton/lien_et_bouton.html">Lien et bouton</a>
+								</td>
+							</tr>
+							<tr>
+								<td class="e">
+									<a href="../menu/menu.html">Menu</a>
+								</td>
+								<td  class="f">
+									<a href="../exercice/exercice.html">Exercices</a>
+								</td>
+							</tr>
+						</table>
+					  </div>
+					</div>
+				</td>
+				<td width=94%, class="test", align="center";>
+				<span class="gros_titre">Bienvenue sur la Salamandre Informatis&eacute;e !</span>
+				</td>
+			</tr>	
+		</table>
+		<div id="marge">
+			<h2>Toutes les pages HTML sont construites sous la forme &lt;head&gt;, puis &lt;body&gt;. Tout d'abord, intéressons-nous à la partie &lt;head&gt;.
+			<h1><u> 1) Head</u></h1>
+			<br>
+			<h2>La partie Head a de nombreuses fonctions. Afin d'être pratique et simple, ce site donne les informations nécessaires à la création d'un site.
+			<br>
+			Voici les balises présentes dans la partie &lt;head&gt; de ce site :
+			<ul>
+				<li><span style="color:#82AAFF;">&lt;meta <span style="color:#ED1C24;">charset</span>=<span style="color:#D05AFF;">"UFT-8"</span>/&gt;</li>  
+				<li><span style="color:#82AAFF;">&lt;title&gt;</span>La Salamandre Informatisée<span style="color:#82AAFF;">&lt;/title&gt;</span></li>
+				<li><span style="color:#82AAFF;">&lt;link <span style="color:#ED1C24;">rel</span>=<span style="color:#D05AFF;">"shortcut icon"</span> <span style="color:#ED1C24;">href</span>=<span style="color:#D05AFF;">"../images/salamandre.gif"</span>/&gt;</li>
+				<li><span style="color:#82AAFF;">&lt;link <span style="color:#ED1C24;">href</span>=<span style="color:#D05AFF;">"../css/test.css" </span> <span style="color:#ED1C24;">rel</span>=<span style="color:#D05AFF;">"stylesheet"</span>/&gt;</li>
+			</ul>
+			</br>
+			Ligne par ligne, la partie Head est détaillée si dessous :
+			<ul>
+				<li>Ligne 1 : encodage des caractères</li>  
+				<li>Ligne 2 : titre de la page (dans l'onglet)</li>
+				<li>Ligne 3 : icone de la page (dans l'onglet), </li>
+				<li>Ligne 4 : lien avec la feuille de style CSS (voir partie CSS)</li>
+			</ul>
+			Attention ! La partie <span style="color:#82AAFF;">&lt;head&gt; </span>d'une page HTML peut être vide, même si cela n'a pas un grand intérêt.
+			<br>
+			<br>
+			Pour créer un site complet, il est recomandé de recopier la ligne 1 exactement : <span style="color:#82AAFF;">&lt;meta <span style="color:#ED1C24;">charset</span>=<span style="color:#D05AFF;">"UFT-8"</span>/&gt;</span>.
+			<br>
+			<br>
+			La ligne 2 s'écrit ainsi : <span style="color:#82AAFF;">&lt;title&gt;</span><i>Titre dans l'onglet</i><span style="color:#82AAFF;">&lt;/title&gt;</span>
+			<br>
+			<br>
+			L'utilité de la ligne 3 est discutable : elle améliore le rendu du site en affichant un dessin dans l'onglet. 
+			<br>Elle s'énonce ainsi : <span style="color:#82AAFF;">&lt;link <span style="color:#ED1C24;">rel</span>=<span style="color:#D05AFF;">"shortcut icon"</span> <span style="color:#ED1C24;">href </span>= <span style="color:#D05AFF;"><i>"dossier/image.gif"</i></span>/&gt;</span>
+			<br>
+			Vous pouvez utiliser <a href="chemins_acces.html">les 2 types d'accès</a>: les chemins d'accès relatifs ou les chemins d'accès absolus.
+			<br>
+			<br>
+			<button onclick="window.location.href = 'Body_and_head2.html';">Page 2 - Body</button>
+		</div>
+		</div>
+		<script>
+		function deroule() {
+		document.getElementById("myDropdown").classList.toggle("show");
+		}
+		window.onclick = function(event) {
+		  if (!event.target.matches('.dropbtn')) {
+			var dropdowns = document.getElementsByClassName("dropdown-content");
+			var i;
+			for (i = 0; i < dropdowns.length; i++) {
+			  var openDropdown = dropdowns[i];
+			  if (openDropdown.classList.contains('show')) {
+				openDropdown.classList.remove('show');
+			  }
+			}
+		  }
+		}
+		</script>
+		</script>
+		<script>
+		function vrai()
+		{
+			alert("Bonne réponse !");
+				return;
+		}
+		</script>
+		<script>
+		function faux()
+		{
+			alert("Mauvaise réponse... Ressayez...");
+				return;
+		}
+		</script>
+	</body>
+</html>

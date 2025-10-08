@@ -1,0 +1,117 @@
+<html>
+	<head>
+		<meta charset="UFT-8"/>
+		<title>La Salamandre Informatis&eacute;e</title>
+		<link rel="shortcut icon" href="../images/salamandre.gif"/>
+		<link href="../css/test.css" rel="stylesheet"/>
+	</head>
+	<body>
+	<div id="tet">
+		<table class="rectangle">
+			<tr>
+				<td width=6%>
+					<div class="dropdown">
+					  <input type="image" onclick="deroule()" class="dropbtn" src="../images/salamandre.gif" height=50></button>
+					  <div id="myDropdown" class="dropdown-content">
+						<table class="affichage" cellspacing=10px >
+							<tr >
+								<a class="affichage_couleur", href="../acceuil.html">Page d'acceuil</a>
+							</tr>
+							<tr>
+								<td class="a">
+									<a href="../body_and_head/Body_and_head.html">Head Body</a>
+								</td>
+								<td class="b">
+									<a href="../span_et_css/span_et_css.html">Span et CSS</a>
+								</td>
+							</tr>
+							<tr>
+								<td class="c">
+									<a href="../fonctions/fonctions.html">Fonctions</a>
+								</td>
+								<td class="d">
+									<a href="../lien_et_bouton/lien_et_bouton.html">Lien et bouton</a>
+								</td>
+							</tr>
+							<tr>
+								<td class="e">
+									<a href="../menu/menu.html">Menu</a>
+								</td>
+								<td  class="f">
+									<a href="../exercice/exercice.html">Exercices</a>
+								</td>
+							</tr>
+						</table>
+					  </div>
+					</div>
+				</td>
+				<td width=94%, class="test", align="center";>
+				<span class="gros_titre">Bienvenue sur la Salamandre Informatis&eacute;e !</span>
+				</td>
+			</tr>	
+		</table>
+		<div id="marge">
+			<h2>Cette page comporte 2 thèmes différents mais liés : la balise <span style="color:#82AAFF;">&lt;span&gt;</span> et le css.</h2>
+			<h1><u> 1) La balise <span style="color:#82AAFF;">&lt;span&gt;</span></u></h1>
+			<br>
+			<h2>La balise <span style="color:#82AAFF;">&lt;span&gt;</span> est une balise "neutre", c'est à dire qu'écrire 
+			<span style="color:#82AAFF;">&lt;span&gt;</span>test<span style="color:#82AAFF;">&lt;/span&gt;</span> ne change rien au mot "test".
+			<br><br> L'avantage d'utiliser cette balise est la possibilité de lui donner des attributs : dans la partie "Body Head" du site, la 
+			balise <span style="color:#82AAFF;">&lt;span&gt;</span> est utilisée afin de rendre un texte coloré.
+			<br>
+			<br>
+			Voici quelques utilisations possibles de la balise <span style="color:#82AAFF;">&lt;span&gt;</span> :
+			<ul>
+				<li> Texte en couleur :<span style="color:#82AAFF;">&lt;span <span style="color:red;">style</span>=<span style="color:#D05AFF;">"color:<i>couleur</i>"</span>&gt;</span> (la couleur doit être en anglais)</li>
+				<li> Texte en couleur :<span style="color:#82AAFF;">&lt;span <span style="color:red;">style</span>=<span style="color:#D05AFF;">"color:#<i>couleur</i>"</span>&gt;</span> (la couleur doit être en hexadécimal)</li>
+			</ul>
+			<br>Les balises <span style="color:#82AAFF;">&lt;span&gt;</span> ont une autre fonction : celle de pouvoir associer à une "classe" une suite d'atributs.
+			<br><br>
+			Dans la feuille de style (informations dans la seconde partie), vous pouvez créer une classe, c'est-à-dire que tous les balises <span style="color:#82AAFF;">&lt;span&gt;</span> 
+			qui auront en attribut la classe auront les attributs que cette classe a dans le CSS.
+			<br><br>Dans le <span style="color:#82AAFF;">&lt;span&gt;</span> :
+			<br><span style="color:#82AAFF;">&lt;span <span style="color:red;">class</span>=<span style="color:#D05AFF;">"la_classe"</span>&gt;...&lt;/span&gt;</span>
+			<br><br>
+			Dans le CSS :
+			<br><span style="color:red;">.la_classe </span>{
+			<div id="test3">
+				<span style="color:gray;">text-decoration</span>:underline;
+			</div>}
+			<br>
+			<br><br><button onclick="window.location.href = 'span_et_css2.html';">Page 2 - CSS</button>
+		</div>
+		</div>
+		<script>
+		function deroule() {
+		document.getElementById("myDropdown").classList.toggle("show");
+		}
+		window.onclick = function(event) {
+		  if (!event.target.matches('.dropbtn')) {
+			var dropdowns = document.getElementsByClassName("dropdown-content");
+			var i;
+			for (i = 0; i < dropdowns.length; i++) {
+			  var openDropdown = dropdowns[i];
+			  if (openDropdown.classList.contains('show')) {
+				openDropdown.classList.remove('show');
+			  }
+			}
+		  }
+		}
+		</script>
+		</script>
+		<script>
+		function vrai()
+		{
+			alert("Bonne réponse !");
+				return;
+		}
+		</script>
+		<script>
+		function faux()
+		{
+			alert("Mauvaise réponse... Ressayez...");
+				return;
+		}
+		</script>
+	</body>
+</html>

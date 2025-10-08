@@ -1,0 +1,113 @@
+<html>
+	<head>
+		<meta charset="UFT-8"/>
+		<title>La Salamandre Informatis&eacute;e</title>
+		<link rel="shortcut icon" href="../images/salamandre.gif"/>
+		<link href="../css/test.css" rel="stylesheet"/>
+	</head>
+	<body>
+	<div id="tet">
+		<table class="rectangle">
+			<tr>
+				<td width=6%>
+					<div class="dropdown">
+					  <input type="image" onclick="deroule()" class="dropbtn" src="../images/salamandre.gif" height=50></button>
+					  <div id="myDropdown" class="dropdown-content">
+						<table class="affichage" cellspacing=10px >
+							<tr >
+								<a class="affichage_couleur", href="../acceuil.html">Page d'acceuil</a>
+							</tr>
+							<tr>
+								<td class="a">
+									<a href="../body_and_head/Body_and_head.html">Head Body</a>
+								</td>
+								<td class="b">
+									<a href="../span_et_css/span_et_css.html">Span et CSS</a>
+								</td>
+							</tr>
+							<tr>
+								<td class="c">
+									<a href="../fonctions/fonctions.html">Fonctions</a>
+								</td>
+								<td class="d">
+									<a href="../lien_et_bouton/lien_et_bouton.html">Lien et bouton</a>
+								</td>
+							</tr>
+							<tr>
+								<td class="e">
+									<a href="../menu/menu.html">Menu</a>
+								</td>
+								<td  class="f">
+									<a href="../exercice/exercice.html">Exercices</a>
+								</td>
+							</tr>
+						</table>
+					  </div>
+					</div>
+				</td>
+				<td width=94%, class="test", align="center";>
+				<span class="gros_titre">Bienvenue sur la Salamandre Informatis&eacute;e !</span>
+				</td>
+			</tr>	
+		</table>
+		<div id="marge">
+			<h1><u><div id="centre"> Les chemins d'accès : la fiche</div>
+			<br>
+			<br>
+			1) Le chemin absolu</u></h1>
+			<h2> Le chemin absolu, c'est l'endroit exact dans un ordinateur, un disque dur, une clef USB, où se trouve un document.
+			<br> <br>
+			Exemple : <i>E:\Technologie\site\page1.html</i>
+			<br> <br>
+			Ainsi, il n'existe qu'un seul et unique lien absolu pour un document. Pour le trouver, le plus simple est de faire CLIC GAUCHE --> Propriétés. 
+			<br> <br>
+			<h1><u> 2) Le chemin relatif</u></h1>
+			<h2> Le chemin relatif, c'est l'endroit où se trouve un document <span style="color:red">par rapport </span>à un autre document.
+			<br> <br>
+			Si le document cherché est dans le même dossier, il suffit de taper le nom du fichier.
+			<br>
+			Si le document cherché est dans un autre dossier :
+			<ul>
+				<li>Dans un dossier <span style="color:#AD68FF">au-dessus </span>du document : <i>../nom_fichier</i></li>
+				<li>Dans un dossier <span style="color:#AD68FF">en dessous</span> du document : <I>./nom_dossier/nom_fichier</i></li>
+			</ul>
+			<br> <br>
+			Ces méthodes peuvent être combinées : pour sortir du dossier, puis entrer dans un autre afin de trouver le document, on peut écire <I>../nom_dossier/nom_fichier</I>
+			<br> <br>
+			<button onclick="window.location.href = 'Body_and_head.html';">&lt;--</button>
+		</div>
+		</div>
+		<script>
+		function deroule() {
+		document.getElementById("myDropdown").classList.toggle("show");
+		}
+		window.onclick = function(event) {
+		  if (!event.target.matches('.dropbtn')) {
+			var dropdowns = document.getElementsByClassName("dropdown-content");
+			var i;
+			for (i = 0; i < dropdowns.length; i++) {
+			  var openDropdown = dropdowns[i];
+			  if (openDropdown.classList.contains('show')) {
+				openDropdown.classList.remove('show');
+			  }
+			}
+		  }
+		}
+		</script>
+		</script>
+		<script>
+		function vrai()
+		{
+			alert("Bonne réponse !");
+				return;
+		}
+		</script>
+		<script>
+		function faux()
+		{
+			alert("Mauvaise réponse... Ressayez...");
+				return;
+		}
+		</script>
+	</body>
+</html>

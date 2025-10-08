@@ -1,0 +1,112 @@
+<html>
+	<head>
+		<meta charset="UFT-8"/>
+		<title>La Salamandre Informatis&eacute;e</title>
+		<link rel="shortcut icon" href="../images/salamandre.gif"/>
+		<link href="../css/test.css" rel="stylesheet"/>
+	</head>
+	<body>
+	<div id="tet">
+		<table class="rectangle">
+			<tr>
+				<td width=6%>
+					<div class="dropdown">
+					  <input type="image" onclick="deroule()" class="dropbtn" src="../images/salamandre.gif" height=50></button>
+					  <div id="myDropdown" class="dropdown-content">
+						<table class="affichage" cellspacing=10px >
+							<tr >
+								<a class="affichage_couleur", href="../acceuil.html">Page d'acceuil</a>
+							</tr>
+							<tr>
+								<td class="a">
+									<a href="../body_and_head/Body_and_head.html">Head Body</a>
+								</td>
+								<td class="b">
+									<a href="../span_et_css/span_et_css.html">Span et CSS</a>
+								</td>
+							</tr>
+							<tr>
+								<td class="c">
+									<a href="../fonctions/fonctions.html">Fonctions</a>
+								</td>
+								<td class="d">
+									<a href="../lien_et_bouton/lien_et_bouton.html">Lien et bouton</a>
+								</td>
+							</tr>
+							<tr>
+								<td class="e">
+									<a href="../menu/menu.html">Menu</a>
+								</td>
+								<td  class="f">
+									<a href="../exercice/exercice.html">Exercices</a>
+								</td>
+							</tr>
+						</table>
+					  </div>
+					</div>
+				</td>
+				<td width=94%, class="test", align="center";>
+				<span class="gros_titre">Bienvenue sur la Salamandre Informatis&eacute;e !</span>
+				</td>
+			</tr>	
+		</table>
+		<div id="marge">
+			<h1><u> 2) Body</u></h1>
+			<br>
+			<h2>La partie Body comprend tout ce qui est présent dans la page (images, texte, ...) et elle est construite entre balises
+			<span style="color:#82AAFF;">&lt;body&gt;</span> <span style="color:#82AAFF;">&lt;/body&gt;</span>.
+			<br><br>
+			Cette page compte quelques balises qui pourront vous aider :
+			<br>
+			<ol>
+				<li>Ecriture de titre : <span style="color:#82AAFF;">&lt;h1&gt;...&lt;/h1&gt;</span></li>
+				<li>Ecriture de sous-titre : <span style="color:#82AAFF;">&lt;h2&gt;...&lt;/h2&gt;</span></li>
+				<li>Ecriture normale : <span style="color:#82AAFF;">&lt;h3&gt;...&lt;/h3&gt;</span></li>
+				<li>Sauter une ligne : <span style="color:#82AAFF;">&lt;br&gt;</span></li>
+				<li>Italique : <span style="color:#82AAFF;">&lt;i&gt;...&lt;/i&gt;</span></li>
+				<li>Souligner : <span style="color:#82AAFF;">&lt;u&gt;...&lt;/u&gt;</span></li>
+				<li>Paragraphe : <span style="color:#82AAFF;">&lt;p&gt;...&lt;/p&gt;</span></li>
+				<!-- <li>Lien (voir <a href="chemins_acces2.html">les chemins d'accès</a>): <span style="color:#82AAFF;">&lt;a <span style="color:red;">href</span>=<span style="color:#D05AFF;">"lien_du_fichier"<span>&gt;<span></li> -->
+				<li>Couleur du texte : <span style="color:#82AAFF;">&lt;span <span style="color:red;">style</span>=<span style="color:#D05AFF;">"color:<i>couleur</i>"</span>&gt;</span> (la couleur doit être en anglais)</li>
+				<li>Tableau : <span style="color:#82AAFF;">&lt;table&gt;...&lt;/table&gt;</span></li>
+				<li>Ligne d'un tableau : <span style="color:#82AAFF;">&lt;tr&gt;...&lt;/tr&gt;</span></li>
+				<li>colonne d'un tableau : <span style="color:#82AAFF;">&lt;td&gt;...&lt;/td&gt;</span></li>
+				
+			</ol>
+			<br><br><button onclick="window.location.href = 'Body_and_head.html';">Page 1 - Head</button>
+		</div>
+		</div>
+		<script>
+		function deroule() {
+		document.getElementById("myDropdown").classList.toggle("show");
+		}
+		window.onclick = function(event) {
+		  if (!event.target.matches('.dropbtn')) {
+			var dropdowns = document.getElementsByClassName("dropdown-content");
+			var i;
+			for (i = 0; i < dropdowns.length; i++) {
+			  var openDropdown = dropdowns[i];
+			  if (openDropdown.classList.contains('show')) {
+				openDropdown.classList.remove('show');
+			  }
+			}
+		  }
+		}
+		</script>
+		</script>
+		<script>
+		function vrai()
+		{
+			alert("Bonne réponse !");
+				return;
+		}
+		</script>
+		<script>
+		function faux()
+		{
+			alert("Mauvaise réponse... Ressayez...");
+				return;
+		}
+		</script>
+	</body>
+</html>

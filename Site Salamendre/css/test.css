@@ -1,0 +1,160 @@
+
+body {
+	/* background-repeat: repeat-y; */
+	padding: 0px 100px 0px; 
+	background-size: cover;
+	/* background-size: auto; */
+	/* background-size: 100%; */
+	background-image: url(../images/techno_salle.png);
+	background-attachment:fixed;
+	background-repeat:no-repeat;
+	width:1200px;
+	margin:auto;
+}
+
+#tet{
+	width:1150px;
+}
+
+#centre{
+	text-align: center
+}
+
+.overline{
+	font-size:17px
+}
+
+.dropbtn {
+  /* background-color: #3498DB; */
+  color: white;
+  padding: 0px;
+  font-size: 13px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  /* background-color: #2980B9; */
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 6px 8px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.dropdown a:hover {
+	background-color: #ddd;
+}
+
+.show {display: block;}
+
+#marge{
+	padding:75px 150px 0px;
+}
+
+#test3{
+	padding:0px 30px 0px;
+}
+	
+.rectangle {
+	background-color: #FCFFDD;
+	position:fixed;
+}
+
+.test {
+	/* padding: 50px 150px 50px; */
+	Text-shadow : 2px 2px 3px #969696;
+	background-color: #D0EFD4;
+}
+
+
+.affichage {
+	background-color: #D0EFD4;
+	/* border-collapse: collapse; */
+}
+
+.affichage_couleur {
+	border-radius: 10px;
+	border: 2px solid black;
+	text-align: center;
+	background-color: #ADFFF0;
+}
+
+.souligner:hover {
+    background-color: #DEFDFF;
+}
+
+.titre {
+	font-size:30px;
+	text-decoration: underline;
+}
+
+.titre_moyen {
+	font-size:25px;
+	text-decoration: underline;
+}
+
+.gros_titre {
+	font-size:40px;
+}
+
+.a {
+	border-radius: 10px;
+	border: 2px solid black;
+	text-align: center;
+	background-color: #FFDDD8;
+}
+
+.b {
+	border-radius: 10px;
+	border: 2px solid black;
+	text-align: center;
+	background-color: #FBFFAF;
+}
+
+.c {
+	border-radius: 10px;
+	border: 2px solid black;
+	text-align: center;
+	background-color: #BBFFB4;
+}
+
+.d {
+	border-radius: 10px;
+	border: 2px solid black;
+	text-align: center;
+	background-color: #B6FFFA;
+}
+
+.e {
+	border-radius: 10px;
+	border: 2px solid black;
+	text-align: center;
+	background-color: #B8B7FF;
+}
+
+.f {
+	border-radius: 10px;
+	border: 2px solid black;
+	text-align: center;
+	background-color: #FFB2FF;
+}
+

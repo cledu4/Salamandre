@@ -1,0 +1,166 @@
+<html>
+	<head>
+		<meta charset="UFT-8"/>
+		<title>La Salamandre Informatis&eacute;e</title>
+		<link rel="shortcut icon" href="../images/salamandre.gif"/>
+		<link href="../css/test.css" rel="stylesheet"/>
+	</head>
+	<body>
+	<div id="tet">
+		<table class="rectangle">
+			<tr>
+				<td width=6%>
+					<div class="dropdown">
+					  <input type="image" onclick="deroule()" class="dropbtn" src="../images/salamandre.gif" height=50>
+					  <div id="myDropdown" class="dropdown-content">
+						<table class="affichage" cellspacing=10px >
+							<tr >
+								<a class="affichage_couleur", href="../acceuil.html">Page d'acceuil</a>
+							</tr>
+							<tr>
+								<td class="a">
+									<a href="../body_and_head/Body_and_head.html">Head Body</a>
+								</td>
+								<td class="b">
+									<a href="../span_et_css/span_et_css.html">Span et CSS</a>
+								</td>
+							</tr>
+							<tr>
+								<td class="c">
+									<a href="../fonctions/fonctions.html">Fonctions</a>
+								</td>
+								<td class="d">
+									<a href="../lien_et_bouton/lien_et_bouton.html">Lien et bouton</a>
+								</td>
+							</tr>
+							<tr>
+								<td class="e">
+									<a href="../menu/menu.html">Menu</a>
+								</td>
+								<td  class="f">
+									<a href="../exercice/exercice.html">Exercices</a>
+								</td>
+							</tr>
+						</table>
+					  </div>
+					</div>
+				</td>
+				<td width=94%, class="test", align="center";>
+				<span class="gros_titre">Bienvenue sur la Salamandre Informatis&eacute;e !</span>
+				</td>
+			</tr>	
+		</table>
+		<div id="marge">
+			<h1><u> Comment faire un menu ?</u></h1>
+			<br><h2>
+			Cette page contient un menu déroulant (la salamandre). Voici ce qu'il faut mettre dans une page pour faire d'une image un menu :
+			<br><br>
+			Dans la page HTML:
+			<br><span style="color:#82AAFF;">&lt;div <span style="color:red;">class</span>=<span style="color:#D05AFF;">"dropdown"</span>&gt;</span>
+			<div id="test3">
+			<span style="color:#82AAFF;">&lt;input <span style="color:red;">type</span>=<span style="color:#D05AFF;">"image"</span> <span style="color:red;">onclick</span>=<span style="color:#D05AFF;">"deroule()"</span>
+			<span style="color:red;">class</span>=<span style="color:#D05AFF;">"dropbtn" </span>
+			<span style="color:red;">src</span>=<span style="color:#D05AFF;">"image"</span>&gt;
+			<br>&lt;div <span style="color:red;">id</span>=<span style="color:#D05AFF;">"myDropdown"</span> <span style="color:red;">class</span>=<span style="color:#D05AFF;">"dropdown-content"</span>&gt;</span>
+			<br>...
+			<br><span style="color:#82AAFF;">&lt;/div&gt;</span>
+			</div>
+			<span style="color:#82AAFF;">&lt;/div&gt;</span>
+			<br><br>
+			Dans la partie script :
+			<br><span style="color:#82AAFF;">&lt;script&gt;</span>
+			<br><span style="color:darkblue;"><i>function</i></span> deroule() {
+			<br>document.getElementById(<span style="color:gray">"myDropdown"</span>).classList.toggle(<span style="color:gray">"show"</span>);
+			<br>}
+			<br>window.onclick = <span style="color:darkblue;"><i>function</i></span> (event) {
+			<div id="test3">
+				<span style="color:darkblue;"><i>if</i></span> (!event.target.matches(<span style="color:gray">'.dropbtn'</span>)) {
+				<div id="test3">
+					<span style="color:darkblue;"><i>var </i></span>dropdowns = document.getElementsByClassName (<span style="color:gray">"dropdown-content"</span>);<br>
+					<span style="color:darkblue;"><i>var </i></span>i;<br>
+					<span style="color:darkblue;"><i>for </i></span>(i = <span style="color:red">0</span>; i &lt; dropdowns.length; i++) {
+					<div id="test3">
+						<span style="color:darkblue;"><i>var </i></span>openDropdown = dropdowns[i];<br>
+						<span style="color:darkblue;"><i>if </i></span>(openDropdown.classList.contains(<span style="color:gray">'show'</span>) {
+						<div id="test3">
+							openDropdown.classList.remove(<span style="color:gray">'show'</span>);
+						</div>}
+					</div>}
+				</div>}
+			</div>}
+			<br><span style="color:#82AAFF;">&lt;/script&gt;</span>
+			<br><br>
+			Dans la partie CSS : 
+			<br>.<span style="color:red;">dropbtn</span> { 
+			<div id="test3">
+				<span style="color:gray;">color</span>: white;
+				<br><span style="color:gray;">padding</span>: 0px;
+				<br><span style="color:gray;">font-size</span>: 13px;
+				<br><span style="color:gray;">border</span>: none;
+				<br><span style="color:gray;">cursor</span>: pointer;
+			</div>}<br>
+			<br>.<span style="color:red;">dropdown</span> { 
+			<div id="test3">
+				<span style="color:gray;">position</span>: relative;
+				<br><span style="color:gray;">display</span>: inline-block;
+			</div>}<br>
+			<br>.<span style="color:red;">dropdown-content</span> { 
+			<div id="test3">
+				<span style="color:gray;">display</span>: none;
+				<br><span style="color:gray;">position</span>: absolute;
+				<br><span style="color:gray;">background-color</span>: #f1f1f1;
+				<br><span style="color:gray;">min-width</span>: 160px;
+				<br><span style="color:gray;">overflow</span>: auto;
+				<br><span style="color:gray;">box-shadow</span>: 0px 8px 0px rgba(0, 0, 0, 0.2);
+				<br><span style="color:gray;">z-index</span>: 1;
+			</div>}<br>
+			<br>.<span style="color:red;">dropdown-content<span style="color:#82AAFF;"> a </span></span> { 
+			<div id="test3">
+				<span style="color:gray;">color</span>: black;
+				<br><span style="color:gray;">padding</span>: 6px 8px;
+				<br><span style="color:gray;">text-decoration</span>: none;
+				<br><span style="color:gray;">display</span>: block;
+			</div>}<br>
+			<br>.<span style="color:red;">dropdown<span style="color:#82AAFF;"> a</span></span>:<span style="color:orange">hover</span> . { 
+			<div id="test3">
+				<span style="color:gray;">background-color</span>: #ddd;
+			</div>}<br>
+			<br>.<span style="color:red;">show </span>{
+			<div id="test3">
+				<span style="color:gray;">display</span>: block;
+			</div>}<br>
+		</div>
+		</div>
+		<script>
+		function deroule() {
+		document.getElementById("myDropdown").classList.toggle("show");
+		}
+		window.onclick = function(event) {
+		  if (!event.target.matches('.dropbtn')) {
+			var dropdowns = document.getElementsByClassName("dropdown-content");
+			var i;
+			for (i = 0; i < dropdowns.length; i++) {
+			  var openDropdown = dropdowns[i];
+			  if (openDropdown.classList.contains('show')) {
+				openDropdown.classList.remove('show');
+			  }
+			}
+		  }
+		}
+		</script>
+		<script>
+		function vrai()
+		{
+			alert("Bonne réponse !");
+				return;
+		}
+		</script>
+		<script>
+		function faux()
+		{
+			alert("Mauvaise réponse... Ressayez...");
+				return;
+		}
+		</script>
+	</body>
+</html>

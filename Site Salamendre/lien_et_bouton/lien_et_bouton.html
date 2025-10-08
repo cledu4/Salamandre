@@ -1,0 +1,134 @@
+<html>
+	<head>
+		<meta charset="UFT-8"/>
+		<title>La Salamandre Informatis&eacute;e</title>
+		<link rel="shortcut icon" href="../images/salamandre.gif"/>
+		<link href="../css/test.css" rel="stylesheet"/>
+	</head>
+	<body>
+	<div id="tet">
+		<table class="rectangle">
+			<tr>
+				<td width=6%>
+					<div class="dropdown">
+					  <input type="image" onclick="deroule()" class="dropbtn" src="../images/salamandre.gif" height=50></button>
+					  <div id="myDropdown" class="dropdown-content">
+						<table class="affichage" cellspacing=10px >
+							<tr >
+								<a class="affichage_couleur", href="../acceuil.html">Page d'acceuil</a>
+							</tr>
+							<tr>
+								<td class="a">
+									<a href="../body_and_head/Body_and_head.html">Head Body</a>
+								</td>
+								<td class="b">
+									<a href="../span_et_css/span_et_css.html">Span et CSS</a>
+								</td>
+							</tr>
+							<tr>
+								<td class="c">
+									<a href="../fonctions/fonctions.html">Fonctions</a>
+								</td>
+								<td class="d">
+									<a href="../lien_et_bouton/lien_et_bouton.html">Lien et bouton</a>
+								</td>
+							</tr>
+							<tr>
+								<td class="e">
+									<a href="../menu/menu.html">Menu</a>
+								</td>
+								<td  class="f">
+									<a href="../exercice/exercice.html">Exercices</a>
+								</td>
+							</tr>
+						</table>
+					  </div>
+					</div>
+				</td>
+				<td width=94%, class="test", align="center";>
+				<span class="gros_titre">Bienvenue sur la Salamandre Informatis&eacute;e !</span>
+				</td>
+			</tr>	
+		</table>
+		<div id="marge">
+			<h2>Cette partie du site est dédiée à la réalisation de liens et de boutons ou d'alertes.</h2>
+			<br>
+			<h1><u>1) Les liens vers d'autres pages</u></h1>
+			<br>
+			<h2> Il existe plusieurs manières de rattacher les différentes parties d'un site ; la plus simple est l'utilisation de lien. Un lien s'énnonce ainsi :
+			<br>
+			<span style="color:#82AAFF;">&lt;a <span style="color:red;">href</span>=<span style="color:#D05AFF;">"lien_du_fichier"</span>&gt;...&lt;/a&gt;</span>
+			<br></h2>
+			<h1><u>2) Les boutons </u></h1>
+			<br>
+			<h2>Les boutons peuvent être de 2 types : soit un espace de texte "animé", soit un bouton "préfabriqué".C'est la second partie qui est décrite ici :
+			<br>
+			<span style="color:#82AAFF;">&lt;button <span style="color:red;">onclick</span>=<span style="color:#D05AFF;">"window.location.href </span>="<i>lien_du_fichier</i>";"&gt;...&lt;/button&gt;</span>
+			<br> Le résultat :<button onclick="window.location.href = '../acceuil.html';">acceuil</button>
+			<br></h2>
+			<h1><u>3) Les alertes</u></h1>
+			<br>
+			<h2>Les alertes sont des messages affichés par la page. Elles sont provoquées en passant la souris sur le texte,
+			en appuyant sur un mot... Il faut donc intégrer de la programation, une page de ce site y est dédiée. Nous vous conseillons de visionner la page intitulée "fonctions" avant cette partie.
+			<br><br>
+			<span style="color:red;"><u><strong>Etape 1 : Le span</strong></u></span>
+			<br><br>
+			Il faut ajouter l'attribut <span style="color:red;">onmousedown</span> à la balise &lt;span&gt;, comme suit :
+			<br>
+			<span style="color:#82AAFF;">&lt;span <span style="color:red;">onmousedown</span>=<span style="color:#D05AFF;"><i>fonction ()</i></span>&gt;</span>...<span style="color:#82AAFF;">&lt;span&gt;</span>
+			
+			<br><br><span style="color:red;"><u><strong>Etape 2 : La fonction</strong></u></span>
+			<br>
+			Dans la partie <span style="color:#82AAFF;">&lt;script&gt;</span>...<span style="color:#82AAFF;">&lt;/script&gt;</span>, la fonction d'alerte s'écrit comme suit :
+			<br>
+			<span style="color:darkblue;"><i>function</i></span> nom_fonction
+			<br>{
+			<div id="test3">
+				alert(<span style="color:gray">"..."</span>);
+				<br><span style="color:darkblue;"><i>return</i></span>;
+			</div>}
+			<br><br>
+			<span onmousedown="test()"> Essayez et cliquez ici! </span>
+		</div>
+		</div>
+		<script>
+		function deroule() {
+		document.getElementById("myDropdown").classList.toggle("show");
+		}
+		window.onclick = function(event) {
+		  if (!event.target.matches('.dropbtn')) {
+			var dropdowns = document.getElementsByClassName("dropdown-content");
+			var i;
+			for (i = 0; i < dropdowns.length; i++) {
+			  var openDropdown = dropdowns[i];
+			  if (openDropdown.classList.contains('show')) {
+				openDropdown.classList.remove('show');
+			  }
+			}
+		  }
+		}
+		</script>
+		</script>
+		<script>
+		function vrai()
+		{
+			alert("Bonne réponse !");
+				return;
+		}
+		</script>
+		<script>
+		function faux()
+		{
+			alert("Mauvaise réponse... Ressayez...");
+				return;
+		}
+		</script>
+		<script>
+		function test()
+		{
+			alert("...");
+				return;
+		}
+		</script>
+	</body>
+</html>

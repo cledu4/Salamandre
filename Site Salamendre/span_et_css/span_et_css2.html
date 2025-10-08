@@ -1,0 +1,115 @@
+<html>
+	<head>
+		<meta charset="UFT-8"/>
+		<title>La Salamandre Informatis&eacute;e</title>
+		<link rel="shortcut icon" href="../images/salamandre.gif"/>
+		<link href="../css/test.css" rel="stylesheet"/>
+	</head>
+	<body>
+	<div id="tet">
+		<table class="rectangle">
+			<tr>
+				<td width=6%>
+					<div class="dropdown">
+					  <input type="image" onclick="deroule()" class="dropbtn" src="../images/salamandre.gif" height=50></button>
+					  <div id="myDropdown" class="dropdown-content">
+						<table class="affichage" cellspacing=10px >
+							<tr >
+								<a class="affichage_couleur", href="../acceuil.html">Page d'acceuil</a>
+							</tr>
+							<tr>
+								<td class="a">
+									<a href="../body_and_head/Body_and_head.html">Head Body</a>
+								</td>
+								<td class="b">
+									<a href="../span_et_css/span_et_css.html">Span et CSS</a>
+								</td>
+							</tr>
+							<tr>
+								<td class="c">
+									<a href="../fonctions/fonctions.html">Fonctions</a>
+								</td>
+								<td class="d">
+									<a href="../lien_et_bouton/lien_et_bouton.html">Lien et bouton</a>
+								</td>
+							</tr>
+							<tr>
+								<td class="e">
+									<a href="../menu/menu.html">Menu</a>
+								</td>
+								<td  class="f">
+									<a href="../exercice/exercice.html">Exercices</a>
+								</td>
+							</tr>
+						</table>
+					  </div>
+					</div>
+				</td>
+				<td width=94%, class="test", align="center";>
+				<span class="gros_titre">Bienvenue sur la Salamandre Informatis&eacute;e !</span>
+				</td>
+			</tr>	
+		</table>
+		<div id="marge">
+			<h1><u> 2) Le CSS</u></h1>
+			<br>
+			<h2> Le CSS permet de mettre en forme le texte, comme vu dans la page précédente. Ici, nou allons voir comment l'utiliser.
+			<br><br>
+			Pour intégrer la feuille de style (c'est la feuille de CSS), il suffit de mettre, dans la partie <span style="color:#82AAFF;">&lt;head&gt;</span> :
+			<br><span style="color:#82AAFF;">&lt;link <span style="color:#ED1C24;">href</span>=<span style="color:#D05AFF;">"<i>nom_fichier.css</i>" </span> <span style="color:#ED1C24;">rel</span>=<span style="color:#D05AFF;">"stylesheet"</span>/&gt;
+			<br><br></span>
+			Pour mettre des attributs dans le body d'une page, il faut écrire :
+			<br>
+			<span style="color:#82AAFF;">body </span>{
+			<br><img src="../images/alinéa.png">...
+			<br>}
+			<br><br>
+			Voici une autre liste des atributs qui peuvent vous servir :
+			<ol>
+				<li><span style="color:gray">background-color</span> (arrière-plan coloré) peut avoir comme valeur "red", "blue", "gray", ... dans le <span style="color:#82AAFF;">.body</span></li>
+				<li><span style="color:gray">padding</span> (marge) comprend 3 valeurs : marge du haut, marge des côtés, marge du bas dans le <span style="color:#82AAFF;">.body</span></li>
+				<li><span style="color:gray">background-repeat</span> (répétition de l'image de fond) est soit "repeat", "repeat-y", "repeat-x" ou "no-repeat" dans le <span style="color:#82AAFF;">.body</span></li>
+				<li><span style="color:gray">background-image</span> (image de fond) est intégrer par un lien (relatif ou absolu) dans le  <span style="color:82AAFF;">.body</span></li>
+				<li><span style="color:gray">font-size</span> (taille de police) requiert une valeur suivi de "px" (pixels) dans le <span style="color:red;">.span</span></li>
+				<li><span style="color:gray">text-decoration</span> (soulignement) a de nombreuses valeurs, comme "underline" (souligner), "overline"(trait au-dessus) dans le <span style="color:red;">.span</span></li>
+			</ol>
+			<br><br>
+			Un attribut est toujours écrit sous la forme :
+			<br><span style="color:gray">attribut</span>:valeur;
+			<br><br><button onclick="window.location.href = 'span_et_css.html';">Page 1 - SPAN</button>
+		</div>
+		</div>
+		<script>
+		function deroule() {
+		document.getElementById("myDropdown").classList.toggle("show");
+		}
+		window.onclick = function(event) {
+		  if (!event.target.matches('.dropbtn')) {
+			var dropdowns = document.getElementsByClassName("dropdown-content");
+			var i;
+			for (i = 0; i < dropdowns.length; i++) {
+			  var openDropdown = dropdowns[i];
+			  if (openDropdown.classList.contains('show')) {
+				openDropdown.classList.remove('show');
+			  }
+			}
+		  }
+		}
+		</script>
+		</script>
+		<script>
+		function vrai()
+		{
+			alert("Bonne réponse !");
+				return;
+		}
+		</script>
+		<script>
+		function faux()
+		{
+			alert("Mauvaise réponse... Ressayez...");
+				return;
+		}
+		</script>
+	</body>
+</html>
